@@ -8,7 +8,22 @@
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.4.0/dist/theme/white.css">
   <style>
     .reveal {
-      font-size: 28px;
+      font-size: 32px;
+    }
+    .reveal h1 {
+      font-size: 3em;
+    }
+    .reveal .slides > section:not(:first-child) {
+      padding-top: 0;
+    }
+    .reveal .slides > section:not(:first-child) > h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .reveal img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -108,8 +123,8 @@
       slideNumber: true,
       plugins: [ RevealMarkdown ],
       markdown: { smartypants: true },
-      minScale: 1,
-      maxScale: 1
+      ratio: '16:9',
+      margin: 0.05
     });
   </script>
 </body>
